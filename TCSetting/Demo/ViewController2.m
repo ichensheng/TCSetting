@@ -41,6 +41,7 @@
     cellModel31.title = @"功能消息免打扰";
     cellModel31.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel31.footerText = @"设置系统功能消息提示声音和震动的时段。";
+    cellModel31.clazz = @"ViewController5";
     NSArray *section3 = @[cellModel31];
     [datasource addObject:section3];
     

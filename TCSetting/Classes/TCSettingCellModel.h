@@ -32,6 +32,7 @@ typedef void(^TCCellModelOperation)();
 @property (nonatomic, copy) NSString *footerText;                   // section底部文字
 @property (nonatomic, assign) NSTextAlignment footerAlignment;      // footer文字对齐位置
 @property (nonatomic, assign) TCCellAccessoryType accessoryType;    // 最右边访问指示图标类型，兼容UITableViewCellAccessoryType
+@property (nonatomic, strong) UIColor *tintColor;                   // UISwitch或者check的tintColor
 @property (nonatomic, assign, getter=isChecked) BOOL checked;       // switch view or checkMark's checked
 @property (nonatomic, assign) CGFloat height;                       // cell高度，默认44
 @property (nonatomic, strong) id extraData;                         // 额外数据

@@ -35,6 +35,10 @@ static const CGFloat kTitleMarginLeft = 15.0f;
 - (void)setup {
     __weak typeof(self) weakself = self;
     
+    if (self.cellModel.tintColor) {
+        self.tintColor = self.cellModel.tintColor;
+    }
+    
     self.titleLabel.text = self.cellModel.title;
     [_detailLabel removeFromSuperview];
     [_detailView removeFromSuperview];

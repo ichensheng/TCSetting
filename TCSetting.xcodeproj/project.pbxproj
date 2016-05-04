@@ -26,6 +26,7 @@
 		341335B61CCDE0E70027DF22 /* profileLockOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B21CCDE0E60027DF22 /* profileLockOff@3x.png */; };
 		341335B71CCDE0E70027DF22 /* profileLockOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B31CCDE0E60027DF22 /* profileLockOn@2x.png */; };
 		341335B81CCDE0E70027DF22 /* profileLockOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B41CCDE0E70027DF22 /* profileLockOn@3x.png */; };
+		345B1BA71CD9E67F0089FF99 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 345B1BA61CD9E67F0089FF99 /* ViewController5.m */; };
 		CA15CC3253C954C33E5E342E /* libPods-TCSetting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60498C89C3E8F58D0A1439CC /* libPods-TCSetting.a */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,8 @@
 		341335B21CCDE0E60027DF22 /* profileLockOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOff@3x.png"; sourceTree = "<group>"; };
 		341335B31CCDE0E60027DF22 /* profileLockOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOn@2x.png"; sourceTree = "<group>"; };
 		341335B41CCDE0E70027DF22 /* profileLockOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOn@3x.png"; sourceTree = "<group>"; };
+		345B1BA51CD9E67F0089FF99 /* ViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
+		345B1BA61CD9E67F0089FF99 /* ViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
 		5DFD588553505861C1A0F8EA /* Pods-TCSetting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCSetting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCSetting/Pods-TCSetting.debug.xcconfig"; sourceTree = "<group>"; };
 		60498C89C3E8F58D0A1439CC /* libPods-TCSetting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCSetting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FBD9FE0A0CA2D5C29E6939 /* Pods-TCSetting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCSetting.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCSetting/Pods-TCSetting.release.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				341335A91CCDDEDB0027DF22 /* ViewController3.m */,
 				341335AA1CCDDEDB0027DF22 /* ViewController4.h */,
 				341335AB1CCDDEDB0027DF22 /* ViewController4.m */,
+				345B1BA51CD9E67F0089FF99 /* ViewController5.h */,
+				345B1BA61CD9E67F0089FF99 /* ViewController5.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 			files = (
 				341335AC1CCDDEDB0027DF22 /* ViewController.m in Sources */,
 				3413359F1CCDDE840027DF22 /* TCSettingCellModel.m in Sources */,
+				345B1BA71CD9E67F0089FF99 /* ViewController5.m in Sources */,
 				341335A11CCDDE840027DF22 /* TCSettingViewController.m in Sources */,
 				341335AF1CCDDEDB0027DF22 /* ViewController3.m in Sources */,
 				341335AD1CCDDEDB0027DF22 /* ViewController1.m in Sources */,
