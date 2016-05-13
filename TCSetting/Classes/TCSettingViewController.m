@@ -52,7 +52,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
     self.tableView.separatorColor = kTableViewSeparatorColor;
-    [self setup];
+    [self tc_setup];
     self.settingDatasource = [self loadSettingDatasource];
 }
 
@@ -244,7 +244,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
 
 #pragma mark - Private Methods
 
-- (void)setup {
+- (void)tc_setup {
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     CGRect frame = CGRectMake(0, 0, kScreenWidth, kTableViewFooterHeight);
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:frame];
