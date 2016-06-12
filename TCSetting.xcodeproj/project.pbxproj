@@ -14,9 +14,6 @@
 		341335731CCDDDD70027DF22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341335711CCDDDD70027DF22 /* LaunchScreen.storyboard */; };
 		3413357E1CCDDDD70027DF22 /* TCSettingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3413357D1CCDDDD70027DF22 /* TCSettingTests.m */; };
 		341335891CCDDDD70027DF22 /* TCSettingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 341335881CCDDDD70027DF22 /* TCSettingUITests.m */; };
-		3413359F1CCDDE840027DF22 /* TCSettingCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3413359A1CCDDE840027DF22 /* TCSettingCellModel.m */; };
-		341335A01CCDDE840027DF22 /* TCSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3413359C1CCDDE840027DF22 /* TCSettingTableViewCell.m */; };
-		341335A11CCDDE840027DF22 /* TCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3413359E1CCDDE840027DF22 /* TCSettingViewController.m */; };
 		341335AC1CCDDEDB0027DF22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341335A31CCDDEDB0027DF22 /* ViewController.m */; };
 		341335AD1CCDDEDB0027DF22 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 341335A51CCDDEDB0027DF22 /* ViewController1.m */; };
 		341335AE1CCDDEDB0027DF22 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 341335A71CCDDEDB0027DF22 /* ViewController2.m */; };
@@ -27,6 +24,9 @@
 		341335B71CCDE0E70027DF22 /* profileLockOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B31CCDE0E60027DF22 /* profileLockOn@2x.png */; };
 		341335B81CCDE0E70027DF22 /* profileLockOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B41CCDE0E70027DF22 /* profileLockOn@3x.png */; };
 		345B1BA71CD9E67F0089FF99 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 345B1BA61CD9E67F0089FF99 /* ViewController5.m */; };
+		34A2DB811D0D6A0B0043CF34 /* TCSettingCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB7C1D0D6A0B0043CF34 /* TCSettingCellModel.m */; };
+		34A2DB821D0D6A0B0043CF34 /* TCSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB7E1D0D6A0B0043CF34 /* TCSettingTableViewCell.m */; };
+		34A2DB831D0D6A0B0043CF34 /* TCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB801D0D6A0B0043CF34 /* TCSettingViewController.m */; };
 		CA15CC3253C954C33E5E342E /* libPods-TCSetting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60498C89C3E8F58D0A1439CC /* libPods-TCSetting.a */; };
 /* End PBXBuildFile section */
 
@@ -62,13 +62,6 @@
 		341335841CCDDDD70027DF22 /* TCSettingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCSettingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		341335881CCDDDD70027DF22 /* TCSettingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCSettingUITests.m; sourceTree = "<group>"; };
 		3413358A1CCDDDD70027DF22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		341335981CCDDE840027DF22 /* TCSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSetting.h; sourceTree = "<group>"; };
-		341335991CCDDE840027DF22 /* TCSettingCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingCellModel.h; sourceTree = "<group>"; };
-		3413359A1CCDDE840027DF22 /* TCSettingCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingCellModel.m; sourceTree = "<group>"; };
-		3413359B1CCDDE840027DF22 /* TCSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingTableViewCell.h; sourceTree = "<group>"; };
-		3413359C1CCDDE840027DF22 /* TCSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingTableViewCell.m; sourceTree = "<group>"; };
-		3413359D1CCDDE840027DF22 /* TCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingViewController.h; sourceTree = "<group>"; };
-		3413359E1CCDDE840027DF22 /* TCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingViewController.m; sourceTree = "<group>"; };
 		341335A21CCDDEDB0027DF22 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		341335A31CCDDEDB0027DF22 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		341335A41CCDDEDB0027DF22 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
@@ -85,6 +78,12 @@
 		341335B41CCDE0E70027DF22 /* profileLockOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOn@3x.png"; sourceTree = "<group>"; };
 		345B1BA51CD9E67F0089FF99 /* ViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
 		345B1BA61CD9E67F0089FF99 /* ViewController5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController5.m; sourceTree = "<group>"; };
+		34A2DB7B1D0D6A0B0043CF34 /* TCSettingCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingCellModel.h; sourceTree = "<group>"; };
+		34A2DB7C1D0D6A0B0043CF34 /* TCSettingCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingCellModel.m; sourceTree = "<group>"; };
+		34A2DB7D1D0D6A0B0043CF34 /* TCSettingTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingTableViewCell.h; sourceTree = "<group>"; };
+		34A2DB7E1D0D6A0B0043CF34 /* TCSettingTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingTableViewCell.m; sourceTree = "<group>"; };
+		34A2DB7F1D0D6A0B0043CF34 /* TCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingViewController.h; sourceTree = "<group>"; };
+		34A2DB801D0D6A0B0043CF34 /* TCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingViewController.m; sourceTree = "<group>"; };
 		5DFD588553505861C1A0F8EA /* Pods-TCSetting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCSetting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TCSetting/Pods-TCSetting.debug.xcconfig"; sourceTree = "<group>"; };
 		60498C89C3E8F58D0A1439CC /* libPods-TCSetting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TCSetting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2FBD9FE0A0CA2D5C29E6939 /* Pods-TCSetting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TCSetting.release.xcconfig"; path = "Pods/Target Support Files/Pods-TCSetting/Pods-TCSetting.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,13 +186,12 @@
 		341335961CCDDE670027DF22 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				341335981CCDDE840027DF22 /* TCSetting.h */,
-				341335991CCDDE840027DF22 /* TCSettingCellModel.h */,
-				3413359A1CCDDE840027DF22 /* TCSettingCellModel.m */,
-				3413359B1CCDDE840027DF22 /* TCSettingTableViewCell.h */,
-				3413359C1CCDDE840027DF22 /* TCSettingTableViewCell.m */,
-				3413359D1CCDDE840027DF22 /* TCSettingViewController.h */,
-				3413359E1CCDDE840027DF22 /* TCSettingViewController.m */,
+				34A2DB7B1D0D6A0B0043CF34 /* TCSettingCellModel.h */,
+				34A2DB7C1D0D6A0B0043CF34 /* TCSettingCellModel.m */,
+				34A2DB7D1D0D6A0B0043CF34 /* TCSettingTableViewCell.h */,
+				34A2DB7E1D0D6A0B0043CF34 /* TCSettingTableViewCell.m */,
+				34A2DB7F1D0D6A0B0043CF34 /* TCSettingViewController.h */,
+				34A2DB801D0D6A0B0043CF34 /* TCSettingViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -300,10 +298,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "iTech Technology";
+				ORGANIZATIONNAME = "陈胜";
 				TargetAttributes = {
 					3413355F1CCDDDD70027DF22 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5ZUQ226LCB;
 					};
 					341335781CCDDDD70027DF22 = {
 						CreatedOnToolsVersion = 7.3;
@@ -420,16 +419,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				341335AC1CCDDEDB0027DF22 /* ViewController.m in Sources */,
-				3413359F1CCDDE840027DF22 /* TCSettingCellModel.m in Sources */,
 				345B1BA71CD9E67F0089FF99 /* ViewController5.m in Sources */,
-				341335A11CCDDE840027DF22 /* TCSettingViewController.m in Sources */,
+				34A2DB811D0D6A0B0043CF34 /* TCSettingCellModel.m in Sources */,
 				341335AF1CCDDEDB0027DF22 /* ViewController3.m in Sources */,
 				341335AD1CCDDEDB0027DF22 /* ViewController1.m in Sources */,
 				341335B01CCDDEDB0027DF22 /* ViewController4.m in Sources */,
 				341335AE1CCDDEDB0027DF22 /* ViewController2.m in Sources */,
 				341335681CCDDDD70027DF22 /* AppDelegate.m in Sources */,
 				341335651CCDDDD70027DF22 /* main.m in Sources */,
-				341335A01CCDDE840027DF22 /* TCSettingTableViewCell.m in Sources */,
+				34A2DB831D0D6A0B0043CF34 /* TCSettingViewController.m in Sources */,
+				34A2DB821D0D6A0B0043CF34 /* TCSettingTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,11 +570,14 @@
 			baseConfigurationReference = 5DFD588553505861C1A0F8EA /* Pods-TCSetting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TCSetting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ichensheng.TCSetting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -584,11 +586,14 @@
 			baseConfigurationReference = F2FBD9FE0A0CA2D5C29E6939 /* Pods-TCSetting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TCSetting/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ichensheng.TCSetting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -2,8 +2,8 @@
 //  TCSettingViewController.m
 //  TCSetting
 //
-//  Created by 陈 胜 on 16/4/20.
-//  Copyright © 2016年 iTech Technology. All rights reserved.
+//  Created by 陈 胜 on 16/5/24.
+//  Copyright © 2016年 陈胜. All rights reserved.
 //
 
 #import "TCSettingViewController.h"
@@ -13,17 +13,17 @@
  *  屏幕宽高
  */
 #ifndef kScreenWidth
-    #define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
 #endif
 #ifndef kScreenHeight
-    #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #endif
 
 /**
  *  tableview分隔线颜色
  */
 #ifndef kTableViewSeparatorColor
-    #define kTableViewSeparatorColor [UIColor colorWithRed:225.0f / 255 green:225.0f / 255 blue:225.0f / 255 alpha:1]
+#define kTableViewSeparatorColor [UIColor colorWithRed:225.0f / 255 green:225.0f / 255 blue:225.0f / 255 alpha:1]
 #endif
 
 static const CGFloat kTableViewFooterHeight = 15.0f;    // tableview footer高度
