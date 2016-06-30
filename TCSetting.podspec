@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.source_files  = "TCSetting/Classes/*.{h,m}"
   s.requires_arc = true
   s.dependency "Masonry", "~> 1.0.0"
+	s.dependency "TCTools", "~> 0.1.4"
 end
