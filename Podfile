@@ -6,6 +6,7 @@ platform :ios, '7.0'
 target 'TCSetting' do
 
 pod 'Masonry', '~> 1.0.0'
+pod 'TCTools', '~> 0.1.2'
 
 end
 

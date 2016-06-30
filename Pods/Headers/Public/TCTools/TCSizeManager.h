@@ -1,0 +1,1 @@
+../../../TCTools/TCTools/Classes/TCSizeManager.h
