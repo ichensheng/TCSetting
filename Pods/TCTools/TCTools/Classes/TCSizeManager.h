@@ -10,6 +10,16 @@
 #import <UIKit/UIKit.h>
 
 /**
+ *  UI尺寸分类，分六档
+ */
+UIKIT_EXTERN NSString * const TCSizeCategorySmall;
+UIKIT_EXTERN NSString * const TCSizeCategoryMedium;
+UIKIT_EXTERN NSString * const TCSizeCategoryLarge;
+UIKIT_EXTERN NSString * const TCSizeCategoryExtraLarge;
+UIKIT_EXTERN NSString * const TCSizeCategoryExtraExtraLarge;
+UIKIT_EXTERN NSString * const TCSizeCategoryExtraExtraExtraLarge;
+
+/**
  *  字体大小分类
  */
 UIKIT_EXTERN NSString * const TCFontTextStyle10;
@@ -106,5 +116,12 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle72;
  *  @return UI尺寸类型
  */
 + (NSString *)sizeCategory;
+
+/**
+ *  修改UI尺寸
+ *
+ *  @param sizeCategory UI尺寸
+ */
++ (void)changeSizeCategory:(NSString *)sizeCategory;
 
 @end

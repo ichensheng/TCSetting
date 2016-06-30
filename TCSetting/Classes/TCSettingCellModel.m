@@ -7,12 +7,13 @@
 //
 
 #import "TCSettingCellModel.h"
+#import "TCSizeManager.h"
 
 @implementation TCSettingCellModel
 
 - (CGFloat)height {
     if (_height == 0.0f) {
-        _height = 44.0f;
+        _height = [TCSizeManager cellHeightWithStyle:TCCellHeightStyle44];
     }
     return _height;
 }

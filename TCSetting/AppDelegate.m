@@ -8,10 +8,21 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "TCSizeManager.h"
 
 @interface AppDelegate ()
 
 @end
+
+///**
+// *  UI尺寸分类，分六档
+// */
+//NSString * const TCSizeCategorySmall = @"TCSizeCategorySmall";
+//NSString * const TCSizeCategoryMedium = @"TCSizeCategoryMedium";
+//NSString * const TCSizeCategoryLarge = @"TCSizeCategoryLarge";
+//NSString * const TCSizeCategoryExtraLarge = @"TCSizeCategoryExtraLarge";
+//NSString * const TCSizeCategoryExtraExtraLarge = @"TCSizeCategoryExtraExtraLarge";
+//NSString * const TCSizeCategoryExtraExtraExtraLarge = @"TCSizeCategoryExtraExtraExtraLarge";
 
 @implementation AppDelegate
 
@@ -22,6 +33,9 @@
     UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
     self.window.rootViewController = naviVC;
     [self.window makeKeyAndVisible];
+    
+    [TCSizeManager changeSizeCategory:TCSizeCategoryExtraExtraExtraLarge];
+    
     return YES;
 }
 

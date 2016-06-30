@@ -37,7 +37,7 @@
     TCSettingCellModel *cellModel13 = [[TCSettingCellModel alloc] init];
     cellModel13.title = @"关闭免打扰";
     cellModel13.accessoryType = TCCellAccessoryCheckmark;
-    cellModel13.footerText = @"消息免打扰说明";
+    cellModel13.footerText = @"开启后，“QQ邮箱提醒”在收到邮件后，手机不会震动与发出提示音。如果设置为“只在夜间开启”，则只在22:00到8:00间生效。";
     cellModel13.footerAlignment = NSTextAlignmentCenter;
     NSArray *section1 = @[cellModel11, cellModel12, cellModel13];
     [datasource addObject:section1];
