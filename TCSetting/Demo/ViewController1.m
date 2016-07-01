@@ -8,6 +8,7 @@
 
 #import "ViewController1.h"
 #import "TCSettingCellModel.h"
+#import "TCSizeManager.h"
 
 @interface ViewController1 ()
 
@@ -56,7 +57,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.textColor = [UIColor grayColor];
     label.text = @"未保护";
-    label.font = [UIFont systemFontOfSize:14];
+    label.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle14)];
     [label sizeToFit];
     cellModel33.detailView = [[UIView alloc] init];
     [cellModel33.detailView addSubview:label];
@@ -64,7 +65,8 @@
     imageView.image = [UIImage imageNamed:@"profileLockOff"];
     CGFloat labelHeight = label.frame.size.height;
     CGFloat labelWidth = label.frame.size.width;
-    imageView.frame = CGRectMake(0, 0, labelHeight, labelHeight);
+    CGSize iconSize = ICON_SIZE(TCIconSizeStyle17);
+    imageView.frame = CGRectMake(0, 0, iconSize.width, iconSize.height);
     [cellModel33.detailView addSubview:imageView];
     CGRect frame = cellModel11.detailView.frame;
     frame.size.width = labelWidth + imageView.frame.size.width;

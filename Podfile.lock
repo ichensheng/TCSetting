@@ -1,13 +1,13 @@
 PODS:
   - Masonry (1.0.0)
-  - TCTools (0.1.5)
+  - TCTools (0.1.6)
 
 DEPENDENCIES:
   - Masonry (~> 1.0.0)
-  - TCTools (~> 0.1.5)
+  - TCTools (~> 0.1.6)
 
 SPEC CHECKSUMS:
   Masonry: b529bb169217897b6354d4b56b1fada6d475b13d
-  TCTools: 69d90d211c125bdd27cd754d868ec46c263df46e
+  TCTools: 7cd4f0b0a024a723905781d4f6bd770b9c4c1558
 
 COCOAPODS: 0.39.0

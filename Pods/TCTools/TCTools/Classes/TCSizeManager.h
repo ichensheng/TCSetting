@@ -33,6 +33,10 @@
 #define SIZE_CATEGORY [TCSizeManager sizeCategory]
 #endif
 
+#ifndef CHANGE_SIZE_CATEGORY
+#define CHANGE_SIZE_CATEGORY(category) [TCSizeManager changeSizeCategory:category]
+#endif
+
 /**
  *  UI尺寸分类，分六档
  */
