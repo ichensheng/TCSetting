@@ -13,7 +13,7 @@
 
 - (CGFloat)height {
     if (_height == 0.0f) {
-        _height = [TCSizeManager cellHeightWithStyle:TCCellHeightStyle44];
+        _height = CELL_HEIGHT(TCCellHeightStyle44);
     }
     return _height;
 }

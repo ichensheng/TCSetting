@@ -143,7 +143,7 @@ NSString * const TCIconSizeStyle72 = @"TCIconSizeStyle72";
 }
 
 /**
- *  聊天也没字体大小
+ *  聊天页面文字字体大小
  *
  *  @return 字体大小
  */

@@ -31,7 +31,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.textColor = [UIColor grayColor];
     label.text = @"未保护";
-    label.font = [UIFont systemFontOfSize:[TCSizeManager fontSizeForTextStyle:TCFontTextStyle14]];
+    label.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle14)];
     [label sizeToFit];
     cellModel11.detailView = [[UIView alloc] init];
     [cellModel11.detailView addSubview:label];
@@ -39,7 +39,7 @@
     imageView.image = [UIImage imageNamed:@"profileLockOff"];
     CGFloat labelHeight = label.frame.size.height;
     CGFloat labelWidth = label.frame.size.width;
-    CGSize iconSize = [TCSizeManager iconSizeWithStyle:TCIconSizeStyle17];
+    CGSize iconSize = ICON_SIZE(TCIconSizeStyle17);
     imageView.frame = CGRectMake(0, 0, iconSize.width, iconSize.height);
     [cellModel11.detailView addSubview:imageView];
     CGRect frame = cellModel11.detailView.frame;

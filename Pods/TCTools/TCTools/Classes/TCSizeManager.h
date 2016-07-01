@@ -9,6 +9,30 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+#ifndef FONT_SIZE
+#define FONT_SIZE(style) [TCSizeManager fontSizeForTextStyle:style]
+#endif
+
+#ifndef CHAT_FONT_SIZE
+#define CHAT_FONT_SIZE [TCSizeManager chatFontSize]
+#endif
+
+#ifndef CELL_HEIGHT
+#define CELL_HEIGHT(style) [TCSizeManager cellHeightWithStyle:style]
+#endif
+
+#ifndef ICON_SIZE
+#define ICON_SIZE(style) [TCSizeManager iconSizeWithStyle:style]
+#endif
+
+#ifndef TABBAR_HEIGHT
+#define TABBAR_HEIGHT [TCSizeManager tabBarHeight]
+#endif
+
+#ifndef SIZE_CATEGORY
+#define SIZE_CATEGORY [TCSizeManager sizeCategory]
+#endif
+
 /**
  *  UI尺寸分类，分六档
  */
@@ -78,8 +102,7 @@ UIKIT_EXTERN NSString * const TCIconSizeStyle72;
 + (CGFloat)fontSizeForTextStyle:(NSString *)textStyle;
 
 /**
- *  聊天也没字体大小
- *
+ *  聊天页面文字字体大小
  *
  *  @return 字体大小
  */

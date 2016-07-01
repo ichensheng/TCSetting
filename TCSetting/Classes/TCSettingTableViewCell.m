@@ -130,8 +130,7 @@ static const CGFloat kTitleMarginLeft = 15.0f;
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc] init];
         _titleLabel.numberOfLines = 1;
-        NSLog(@"字体大小：%f", [TCSizeManager fontSizeForTextStyle:TCFontTextStyle17]);
-        _titleLabel.font = [UIFont systemFontOfSize:[TCSizeManager fontSizeForTextStyle:TCFontTextStyle17]];
+        _titleLabel.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle17)];
         [self.contentView addSubview:_titleLabel];
     }
     return _titleLabel;
@@ -141,7 +140,7 @@ static const CGFloat kTitleMarginLeft = 15.0f;
     if (!_detailLabel) {
         _detailLabel = [[UILabel alloc] init];
         _detailLabel.numberOfLines = 1;
-        _detailLabel.font = [UIFont systemFontOfSize:[TCSizeManager fontSizeForTextStyle:TCFontTextStyle14]];
+        _detailLabel.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle14)];
         _detailLabel.textColor = [UIColor grayColor];
         [self.contentView addSubview:_detailLabel];
     }
