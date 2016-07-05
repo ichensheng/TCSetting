@@ -34,7 +34,7 @@
     self.window.rootViewController = naviVC;
     [self.window makeKeyAndVisible];
     
-    CHANGE_SIZE_CATEGORY(TCSizeCategorySmall);
+    CHANGE_SIZE_CATEGORY(TCSizeCategoryMedium);
     
     return YES;
 }

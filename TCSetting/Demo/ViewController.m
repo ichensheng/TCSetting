@@ -25,6 +25,7 @@
     NSMutableArray *datasource = [NSMutableArray array];
     
     TCSettingCellModel *cellModel11 = [[TCSettingCellModel alloc] init];
+    cellModel11.headerText = @"关于账号与安全";
     cellModel11.title = @"账号与安全";
     cellModel11.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel11.clazz = @"ViewController1";
