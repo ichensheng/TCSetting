@@ -9,24 +9,6 @@
 #import "TCSettingViewController.h"
 #import "TCSettingTableViewCell.h"
 
-/**
- *  屏幕宽高
- */
-#ifndef kScreenWidth
-#define kScreenWidth [UIScreen mainScreen].bounds.size.width
-#endif
-#ifndef kScreenHeight
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
-#endif
-
-/**
- *  tableview分隔线颜色
- */
-#ifndef kTableViewSeparatorColor
-#define kTableViewSeparatorColor [UIColor colorWithRed:225.0f / 255 green:225.0f / 255 blue:225.0f / 255 alpha:1]
-#endif
-
-static const CGFloat kTableViewFooterHeight = 15.0f;    // tableview footer高度
 static const CGFloat kHeaderMarginBottom = 8.0f;
 static const CGFloat kFooterMarginTop = 8.0f;
 static const CGFloat kHeaderAndFooterFontSize = 14.0f;
@@ -47,9 +29,6 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.clearsSelectionOnViewWillAppear = NO;
-    self.tableView.separatorColor = kTableViewSeparatorColor;
-    [self tc_setup];
     self.settingDatasource = [self loadSettingDatasource];
 }
 
@@ -237,12 +216,6 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
 }
 
 #pragma mark - Private Methods
-
-- (void)tc_setup {
-    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
-    CGRect frame = CGRectMake(0, 0, kScreenWidth, kTableViewFooterHeight);
-    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:frame];
-}
 
 - (NSArray *)loadSettingDatasource {
     return nil;
