@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TCSettingLikeViewController.h"
 
 static NSString * const kReuseIdentifier = @"Cell";
 
-@interface TCSettingViewController : UITableViewController
+@interface TCSettingViewController : TCSettingLikeViewController
 
 @property (nonatomic, strong, readonly) NSArray *settingDatasource;
 

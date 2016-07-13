@@ -27,9 +27,6 @@
 #endif
 
 static const CGFloat kTableViewFooterHeight = 15.0f;    // tableview footer高度
-static const CGFloat kFirstSectionHeaderHeight = 15.0f; // 第一个section header高度
-static const CGFloat kOtherSectionHeaderHeight = 20.0f; // 其它section header高度
-static const CGFloat kSectionFooterHeight = 0.01f;      // section footer高度
 static const CGFloat kHeaderMarginBottom = 8.0f;
 static const CGFloat kFooterMarginTop = 8.0f;
 static const CGFloat kHeaderAndFooterFontSize = 14.0f;
@@ -223,10 +220,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
             return size.height + kHeaderMarginBottom + kOtherSectionHeaderHeight;
         }
     } else {
-        if (section == 0) {
-            return kFirstSectionHeaderHeight;
-        }
-        return kOtherSectionHeaderHeight;
+        return [super tableView:tableView heightForHeaderInSection:section];
     }
 }
 
@@ -239,7 +233,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
                                   constraintSize:constraintSize];
         return size.height + kFooterMarginTop + kSectionFooterHeight;
     }
-    return kSectionFooterHeight;
+    return [super tableView:tableView heightForFooterInSection:section];
 }
 
 #pragma mark - Private Methods
