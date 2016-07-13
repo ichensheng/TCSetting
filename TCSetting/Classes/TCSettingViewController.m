@@ -21,10 +21,6 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
 
 @implementation TCSettingViewController
 
-- (instancetype)init {
-    return [super initWithStyle:UITableViewStyleGrouped];
-}
-
 #pragma mark - Life Cycle
 
 - (void)viewDidLoad {

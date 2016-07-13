@@ -23,6 +23,10 @@ static const CGFloat kTableViewFooterHeight = 15.0f;    // tableview footeré«˜åº
 
 @implementation TCSettingLikeViewController
 
+- (instancetype)init {
+    return [super initWithStyle:UITableViewStyleGrouped];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.clearsSelectionOnViewWillAppear = NO;
