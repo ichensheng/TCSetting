@@ -15,6 +15,16 @@ static NSString * const kReuseIdentifier = @"Cell";
 
 @property (nonatomic, strong, readonly) NSArray *settingDatasource;
 
+/**
+ *  子类继承该方法提供数据源
+ *
+ *  @return 数据源
+ */
 - (NSArray *)loadSettingDatasource;
+
+/**
+ *  刷新数据源
+ */
+- (void)reloadSettingDatasource;
 
 @end

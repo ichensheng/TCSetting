@@ -211,11 +211,24 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
     return [super tableView:tableView heightForFooterInSection:section];
 }
 
-#pragma mark - Private Methods
-
+/**
+ *  子类继承该方法提供数据源
+ *
+ *  @return 数据源
+ */
 - (NSArray *)loadSettingDatasource {
     return nil;
 }
+
+/**
+ *  刷新数据源
+ */
+- (void)reloadSettingDatasource {
+    self.settingDatasource = [self loadSettingDatasource];
+    [self.tableView reloadData];
+}
+
+#pragma mark - Private Methods
 
 - (CGSize)boundingSizeWithFont:(UIFont *)font
                      forString:(NSString *)string
