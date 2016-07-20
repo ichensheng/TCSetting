@@ -43,6 +43,8 @@ static const CGFloat kTitleMarginLeft = 15.0f;
     self.titleLabel.text = self.cellModel.title;
     [_detailLabel removeFromSuperview];
     [_detailView removeFromSuperview];
+    _detailLabel = nil;
+    _detailView = nil;
     self.accessoryView = nil;
     
     /**
