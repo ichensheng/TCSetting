@@ -58,8 +58,9 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
     if (!cell) {
         cell = [[TCSettingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                              reuseIdentifier:kReuseIdentifier];
-        cell.cellModel = self.settingDatasource[indexPath.section][indexPath.row];
     }
+    cell.cellModel = self.settingDatasource[indexPath.section][indexPath.row];
+
     cell.delegate = self;
     return cell;
 }
