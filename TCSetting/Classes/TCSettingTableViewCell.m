@@ -41,11 +41,6 @@ static const CGFloat kTitleMarginLeft = 15.0f;
     }
     
     self.titleLabel.text = self.cellModel.title;
-    [_detailLabel removeFromSuperview];
-    [_detailView removeFromSuperview];
-    _detailLabel = nil;
-    _detailView = nil;
-    self.accessoryView = nil;
     
     /**
      *  设置title约束
@@ -62,6 +57,7 @@ static const CGFloat kTitleMarginLeft = 15.0f;
      */
     if (self.cellModel.detailView) { // detailView优先
         if (self.cellModel.accessoryType == TCCellAccessoryDisclosureIndicator) {
+            self.detailView.hidden = NO;
             [self.detailView mas_updateConstraints:^(MASConstraintMaker *make) {
                 make.size.mas_equalTo(self.detailView.frame.size);
                 make.right.mas_equalTo(0.0f);
@@ -71,6 +67,7 @@ static const CGFloat kTitleMarginLeft = 15.0f;
             self.accessoryView = self.detailView;
         }
     } else if (self.cellModel.detail) {
+        self.detailLabel.hidden = NO;
         self.detailLabel.text = self.cellModel.detail;
         [self.detailLabel sizeToFit];
         if (self.cellModel.accessoryType == TCCellAccessoryNone) { // 没有箭头则detailLabel作为accessoryView
@@ -82,6 +79,14 @@ static const CGFloat kTitleMarginLeft = 15.0f;
                 make.centerY.equalTo(weakself.contentView);
             }];
         }
+    } else {
+        if (_detailView) {
+            self.detailView.hidden = YES;
+        }
+        if (_detailLabel) {
+            self.detailLabel.hidden = YES;
+        }
+        self.accessoryView = nil;
     }
     
     self.selectionStyle = UITableViewCellSelectionStyleDefault;
