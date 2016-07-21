@@ -13,7 +13,6 @@
 static const CGFloat kTitleMarginLeft = 15.0f;
 static const CGFloat kTitleMarginRight = 30.0f;
 static const CGFloat kTitleMarginRight2 = 10.0f;
-static const CGFloat kTitleMarginRight3 = 15.0f;
 
 @interface TCSettingTableViewCell()
 
