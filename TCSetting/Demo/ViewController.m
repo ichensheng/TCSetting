@@ -26,7 +26,7 @@
     
     TCSettingCellModel *cellModel11 = [[TCSettingCellModel alloc] init];
     cellModel11.headerText = @"关于账号与安全";
-    cellModel11.title = @"账号与安全账号与安全账号与安全账号与安全账号与安全账号与安全账号与安全";
+    cellModel11.title = @"账号与安全";
     cellModel11.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel11.clazz = @"ViewController1";
     UILabel *label = [[UILabel alloc] init];
@@ -52,8 +52,7 @@
     [datasource addObject:section1];
     
     TCSettingCellModel *cellModel21 = [[TCSettingCellModel alloc] init];
-    cellModel21.title = @"新消息提醒新消息提醒新消息提醒新消息提醒新消息提醒新消息提醒";
-    cellModel21.titleColor = [UIColor redColor];
+    cellModel21.title = @"新消息提醒";
     cellModel21.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel21.clazz = @"ViewController2";
     TCSettingCellModel *cellModel22 = [[TCSettingCellModel alloc] init];
@@ -61,16 +60,14 @@
     cellModel22.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel22.clazz = @"ViewController3";
     TCSettingCellModel *cellModel23 = [[TCSettingCellModel alloc] init];
-    cellModel23.title = @"通用通用通用通用通用通用通用通用通用通用通用通用通用通用通用通用通用通用通用";
-//    cellModel23.accessoryType = TCCellAccessoryDisclosureIndicator;
+    cellModel23.title = @"通用";
+    cellModel23.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel23.clazz = @"ViewController4";
     NSArray *section2 = @[cellModel21, cellModel22, cellModel23];
     [datasource addObject:section2];
     
     TCSettingCellModel *cellModel31 = [[TCSettingCellModel alloc] init];
-    cellModel31.title = @"邮件签名";
-    cellModel31.detail = @"帮助与反馈帮助与反馈帮助与反馈帮助与反馈帮助与反馈";
-    cellModel31.detailColor = [UIColor blueColor];
+    cellModel31.title = @"帮助与反馈";
     cellModel31.accessoryType = TCCellAccessoryDisclosureIndicator;
     TCSettingCellModel *cellModel32 = [[TCSettingCellModel alloc] init];
     cellModel32.title = @"关于微信";

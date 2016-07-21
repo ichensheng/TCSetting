@@ -36,7 +36,7 @@
     NSMutableArray *datasource = [NSMutableArray array];
     
     TCSettingCellModel *cellModel11 = [[TCSettingCellModel alloc] init];
-    cellModel11.title = @"加我为朋友时需要验证加我为朋友时需要验证加我为朋友时需要验证加我为朋友时需要验证加我为朋友时需要验证";
+    cellModel11.title = @"加我为朋友时需要验证";
     cellModel11.headerText = @"通讯录";
     cellModel11.accessoryType = TCCellAccessorySwitch;
     cellModel11.checked = YES;
