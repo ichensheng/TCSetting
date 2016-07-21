@@ -23,6 +23,7 @@ typedef void(^TCCellModelOperation)();
 @interface TCSettingCellModel : NSObject
 
 @property (nonatomic, copy) NSString *title;                        // 左边文字
+@property (nonatomic, assign) NSTextAlignment titleAlignment;       // title文字对齐位置
 @property (nonatomic, copy) NSString *detail;                       // 右边文字
 @property (nonatomic, strong) UIView *detailView;                   // 右边view，优先高于detail
 @property (nonatomic, copy) NSString *clazz;                        // push控制器类名

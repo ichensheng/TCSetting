@@ -48,7 +48,11 @@ static const CGFloat kTitleMarginLeft = 15.0f;
     [self.titleLabel sizeToFit];
     [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(weakself.titleLabel.frame.size);
-        make.left.mas_equalTo(kTitleMarginLeft);
+        if (self.cellModel.titleAlignment == NSTextAlignmentCenter) {
+            make.centerX.mas_equalTo(weakself.contentView);
+        } else {
+            make.left.mas_equalTo(kTitleMarginLeft);
+        }
         make.centerY.equalTo(weakself.contentView);
     }];
     
@@ -123,6 +127,8 @@ static const CGFloat kTitleMarginLeft = 15.0f;
             break;
         }
     }
+    
+    
 }
 
 - (void)valueChanged:(UISwitch *)sender {
