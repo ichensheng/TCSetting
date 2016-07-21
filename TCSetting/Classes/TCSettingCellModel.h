@@ -24,7 +24,9 @@ typedef void(^TCCellModelOperation)();
 
 @property (nonatomic, copy) NSString *title;                        // 左边文字
 @property (nonatomic, assign) NSTextAlignment titleAlignment;       // title文字对齐位置
+@property (nonatomic, strong) UIColor *titleColor;                  // title颜色，默认黑色
 @property (nonatomic, copy) NSString *detail;                       // 右边文字
+@property (nonatomic, strong) UIColor *detailColor;                 // 右边文字颜色，默认黑色
 @property (nonatomic, strong) UIView *detailView;                   // 右边view，优先高于detail
 @property (nonatomic, copy) NSString *clazz;                        // push控制器类名
 @property (nonatomic, copy) TCCellModelOperation operation;         // 优先级高于clazz

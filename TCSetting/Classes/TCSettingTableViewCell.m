@@ -62,6 +62,11 @@ static const CGFloat kTitleMarginRight2 = 10.0f;
     } else if (self.cellModel.detail) {
         self.detailLabel.hidden = NO;
         self.detailLabel.text = self.cellModel.detail;
+        if (self.cellModel.detailColor) {
+            [self.detailLabel setTextColor:self.cellModel.detailColor];
+        } else {
+            [self.detailLabel setTextColor:[UIColor blackColor]];
+        }
         [self.detailLabel sizeToFit];
         if (self.cellModel.accessoryType == TCCellAccessoryNone) { // 没有箭头则detailLabel作为accessoryView
             self.accessoryView = self.detailLabel;
@@ -123,6 +128,11 @@ static const CGFloat kTitleMarginRight2 = 10.0f;
      *  设置title约束
      */
     self.titleLabel.text = self.cellModel.title;
+    if (self.cellModel.titleColor) {
+        self.titleLabel.textColor = self.cellModel.titleColor;
+    } else {
+        self.titleLabel.textColor = [UIColor blackColor];
+    }
     [self.titleLabel sizeToFit];
     [self addTitleLabelConstraints];
 }

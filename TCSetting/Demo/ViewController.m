@@ -53,6 +53,7 @@
     
     TCSettingCellModel *cellModel21 = [[TCSettingCellModel alloc] init];
     cellModel21.title = @"新消息提醒新消息提醒新消息提醒新消息提醒新消息提醒新消息提醒";
+    cellModel21.titleColor = [UIColor redColor];
     cellModel21.accessoryType = TCCellAccessoryDisclosureIndicator;
     cellModel21.clazz = @"ViewController2";
     TCSettingCellModel *cellModel22 = [[TCSettingCellModel alloc] init];
@@ -69,6 +70,7 @@
     TCSettingCellModel *cellModel31 = [[TCSettingCellModel alloc] init];
     cellModel31.title = @"邮件签名";
     cellModel31.detail = @"帮助与反馈帮助与反馈帮助与反馈帮助与反馈帮助与反馈";
+    cellModel31.detailColor = [UIColor blueColor];
     cellModel31.accessoryType = TCCellAccessoryDisclosureIndicator;
     TCSettingCellModel *cellModel32 = [[TCSettingCellModel alloc] init];
     cellModel32.title = @"关于微信";
