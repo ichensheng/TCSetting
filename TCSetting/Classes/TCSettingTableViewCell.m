@@ -11,6 +11,9 @@
 #import "TCSizeManager.h"
 
 static const CGFloat kTitleMarginLeft = 15.0f;
+static const CGFloat kTitleMarginRight = 30.0f;
+static const CGFloat kTitleMarginRight2 = 10.0f;
+static const CGFloat kTitleMarginRight3 = 15.0f;
 
 @interface TCSettingTableViewCell()
 
@@ -40,22 +43,6 @@ static const CGFloat kTitleMarginLeft = 15.0f;
         self.tintColor = self.cellModel.tintColor;
     }
     
-    self.titleLabel.text = self.cellModel.title;
-    
-    /**
-     *  设置title约束
-     */
-    [self.titleLabel sizeToFit];
-    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(weakself.titleLabel.frame.size);
-        if (self.cellModel.titleAlignment == NSTextAlignmentCenter) {
-            make.centerX.mas_equalTo(weakself.contentView);
-        } else {
-            make.left.mas_equalTo(kTitleMarginLeft);
-        }
-        make.centerY.equalTo(weakself.contentView);
-    }];
-    
     /**
      *  设置详情
      */
@@ -68,6 +55,9 @@ static const CGFloat kTitleMarginLeft = 15.0f;
                 make.centerY.equalTo(self.contentView);
             }];
         } else { // 没有箭头则detailView作为accessoryView
+            if (_detailView) {
+                [_detailView removeFromSuperview];
+            }
             self.accessoryView = self.detailView;
         }
     } else if (self.cellModel.detail) {
@@ -81,6 +71,8 @@ static const CGFloat kTitleMarginLeft = 15.0f;
                 make.size.mas_equalTo(weakself.detailLabel.frame.size);
                 make.right.mas_equalTo(0.0f);
                 make.centerY.equalTo(weakself.contentView);
+                CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+                make.width.mas_equalTo(screenWidth / 2);
             }];
         }
     } else {
@@ -128,7 +120,40 @@ static const CGFloat kTitleMarginLeft = 15.0f;
         }
     }
     
-    
+    /**
+     *  设置title约束
+     */
+    self.titleLabel.text = self.cellModel.title;
+    [self.titleLabel sizeToFit];
+    [self addTitleLabelConstraints];
+}
+
+- (void)addTitleLabelConstraints {
+    __weak typeof(self) weakself = self;
+    [self.titleLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(weakself.titleLabel.frame.size);
+        if (self.cellModel.titleAlignment == NSTextAlignmentCenter) {
+            make.centerX.mas_equalTo(weakself.contentView);
+        } else {
+            make.left.mas_equalTo(kTitleMarginLeft);
+        }
+        make.centerY.equalTo(weakself.contentView);
+        CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+        CGFloat maxWidth = 0.0f;
+        CGFloat detailViewWidth = 0.0f;
+        if (_detailView) {
+            detailViewWidth = _detailView.frame.size.width;
+        }
+        if (self.cellModel.accessoryType == TCCellAccessorySwitch) {
+            detailViewWidth = self.switchView.frame.size.width;
+        }
+        if (self.cellModel.accessoryType == TCCellAccessoryDisclosureIndicator) {
+            maxWidth = screenWidth - kTitleMarginLeft - kTitleMarginRight - detailViewWidth;
+        } else {
+            maxWidth = screenWidth - kTitleMarginLeft - kTitleMarginRight2 - detailViewWidth;
+        }
+        make.width.mas_equalTo(maxWidth);
+    }];
 }
 
 - (void)valueChanged:(UISwitch *)sender {
@@ -152,6 +177,7 @@ static const CGFloat kTitleMarginLeft = 15.0f;
 - (UILabel *)detailLabel {
     if (!_detailLabel) {
         _detailLabel = [[UILabel alloc] init];
+        _detailLabel.textAlignment = NSTextAlignmentRight;
         _detailLabel.numberOfLines = 1;
         _detailLabel.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle14)];
         _detailLabel.textColor = [UIColor grayColor];
