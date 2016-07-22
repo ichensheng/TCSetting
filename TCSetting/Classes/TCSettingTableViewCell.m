@@ -143,8 +143,10 @@ static const CGFloat kTitleMarginRight2 = 10.0f;
         make.size.mas_equalTo(weakself.titleLabel.frame.size);
         if (self.cellModel.titleAlignment == NSTextAlignmentCenter) {
             make.centerX.mas_equalTo(weakself.contentView);
+            weakself.titleLabel.textAlignment = NSTextAlignmentCenter;
         } else {
             make.left.mas_equalTo(kTitleMarginLeft);
+            weakself.titleLabel.textAlignment = NSTextAlignmentLeft;
         }
         make.centerY.equalTo(weakself.contentView);
         CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
