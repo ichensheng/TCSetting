@@ -8,8 +8,9 @@
 
 #import "ViewController2.h"
 #import "TCSettingCellModel.h"
+#import "TCSettingTableViewCell.h"
 
-@interface ViewController2 ()
+@interface ViewController2 () <TCSettingTableViewCellDelegate>
 
 @end
 
@@ -63,6 +64,15 @@
     [datasource addObject:section5];
     
     return datasource;
+}
+
+#pragma mark - TCSettingTableViewCellDelegate
+
+- (void)tableViewCell:(TCSettingTableViewCell *)tableViewCell
+        withCellModel:(TCSettingCellModel *)cellModel
+          atIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"点击%ld-%ld", indexPath.section, indexPath.row);
 }
 
 @end

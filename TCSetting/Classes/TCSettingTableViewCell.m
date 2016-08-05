@@ -168,8 +168,10 @@ static const CGFloat kTitleMarginRight2 = 10.0f;
 }
 
 - (void)valueChanged:(UISwitch *)sender {
-    if (self.delegate && [self.delegate respondsToSelector:@selector(didCheckChanged:withCellModel:atCell:)]) {
-        [self.delegate didCheckChanged:sender.on withCellModel:self.cellModel atCell:self];
+    self.cellModel.checked = !self.cellModel.checked;
+    if (self.delegate && [self.delegate respondsToSelector:@selector(tableViewCell:withCellModel:atIndexPath:)]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:self];
+        [self.delegate tableViewCell:self withCellModel:self.cellModel atIndexPath:indexPath];
     }
 }
 

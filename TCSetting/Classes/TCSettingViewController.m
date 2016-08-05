@@ -59,6 +59,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
         cell = [[TCSettingTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                              reuseIdentifier:kReuseIdentifier];
         cell.delegate = self;
+        cell.tableView = tableView;
     }
     cell.cellModel = self.settingDatasource[indexPath.section][indexPath.row];
     return cell;
@@ -82,20 +83,30 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
         [self.navigationController pushViewController:controller animated:YES];
     } else if (cellModel.accessoryType == TCCellAccessoryCheckmark) {
         TCSettingTableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-        if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
-            cell.accessoryType = UITableViewCellAccessoryNone;
-            if (cell.delegate && [cell.delegate respondsToSelector:@selector(didCheckChanged:withCellModel:atCell:)]) {
-                [cell.delegate didCheckChanged:NO withCellModel:cellModel atCell:cell];
-            }
-        } else {
-            cell.accessoryType = UITableViewCellAccessoryCheckmark;
-            if (cell.delegate && [cell.delegate respondsToSelector:@selector(didCheckChanged:withCellModel:atCell:)]) {
-                [cell.delegate didCheckChanged:YES withCellModel:cellModel atCell:cell];
+        BOOL checked = cell.accessoryType == UITableViewCellAccessoryNone; // 原来没有选中，现在要选中
+        cell.accessoryType = checked ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone;
+        cellModel.checked = checked;
+        if (cell.delegate && [cell.delegate respondsToSelector:@selector(tableViewCell:withCellModel:atIndexPath:)]) {
+            [cell.delegate tableViewCell:cell withCellModel:cellModel atIndexPath:indexPath];
+        }
+        
+        /**
+         *  把同组其它cell都置为没选中
+         */
+        for (TCSettingTableViewCell *theCell in [tableView visibleCells]) {
+            if ([tableView indexPathForCell:theCell].section == indexPath.section) { // 同组cell
+                if (theCell != cell && theCell.accessoryType == UITableViewCellAccessoryCheckmark) {
+                    theCell.accessoryType = UITableViewCellAccessoryNone;
+                }
             }
         }
-        for (TCSettingTableViewCell *theCell in [tableView visibleCells]) {
-            if (theCell != cell && theCell.accessoryType == UITableViewCellAccessoryCheckmark) {
-                theCell.accessoryType = UITableViewCellAccessoryNone;
+        
+        /**
+         *  把其它同组的cellModel checked都置为NO
+         */
+        for (TCSettingCellModel *tmpCellModel in self.settingDatasource[indexPath.section]) {
+            if (tmpCellModel != cellModel) {
+                tmpCellModel.checked = NO;
             }
         }
     }
