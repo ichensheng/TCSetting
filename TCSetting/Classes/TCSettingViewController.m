@@ -236,7 +236,13 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
  */
 - (void)reloadSettingDatasource {
     self.settingDatasource = [self loadSettingDatasource];
-    [self.tableView reloadData];
+    if ([[NSThread currentThread] isMainThread]) {
+        [self.tableView reloadData];
+    } else {
+        dispatch_async(dispatch_get_main_queue(), ^{
+           [self.tableView reloadData]; 
+        });
+    }
 }
 
 #pragma mark - Private Methods
