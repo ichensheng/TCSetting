@@ -25,7 +25,7 @@ static const CGFloat kSectionHeaderAndFooterMarginLeft = 15.0f;
 @optional
 
 /**
- *  checked有变化时优先回调该方法
+ *  checked有变化时回调该方法
  *
  *  @param tableViewCell 被点击的cell
  *  @param cellModel     cell数据model，checked已经被置为最新的值了

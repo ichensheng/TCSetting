@@ -23,6 +23,7 @@
 		341335B61CCDE0E70027DF22 /* profileLockOff@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B21CCDE0E60027DF22 /* profileLockOff@3x.png */; };
 		341335B71CCDE0E70027DF22 /* profileLockOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B31CCDE0E60027DF22 /* profileLockOn@2x.png */; };
 		341335B81CCDE0E70027DF22 /* profileLockOn@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 341335B41CCDE0E70027DF22 /* profileLockOn@3x.png */; };
+		3455D5141D5D9C5500C8BBCE /* UINavigationController+Demo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3455D5131D5D9C5500C8BBCE /* UINavigationController+Demo.m */; };
 		3457106B1D35CDC300D45E5C /* TCSettingLikeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3457106A1D35CDC300D45E5C /* TCSettingLikeViewController.m */; };
 		345B1BA71CD9E67F0089FF99 /* ViewController5.m in Sources */ = {isa = PBXBuildFile; fileRef = 345B1BA61CD9E67F0089FF99 /* ViewController5.m */; };
 		34A2DB811D0D6A0B0043CF34 /* TCSettingCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A2DB7C1D0D6A0B0043CF34 /* TCSettingCellModel.m */; };
@@ -77,6 +78,8 @@
 		341335B21CCDE0E60027DF22 /* profileLockOff@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOff@3x.png"; sourceTree = "<group>"; };
 		341335B31CCDE0E60027DF22 /* profileLockOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOn@2x.png"; sourceTree = "<group>"; };
 		341335B41CCDE0E70027DF22 /* profileLockOn@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profileLockOn@3x.png"; sourceTree = "<group>"; };
+		3455D5121D5D9C5500C8BBCE /* UINavigationController+Demo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Demo.h"; sourceTree = "<group>"; };
+		3455D5131D5D9C5500C8BBCE /* UINavigationController+Demo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Demo.m"; sourceTree = "<group>"; };
 		345710691D35CDC300D45E5C /* TCSettingLikeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSettingLikeViewController.h; sourceTree = "<group>"; };
 		3457106A1D35CDC300D45E5C /* TCSettingLikeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSettingLikeViewController.m; sourceTree = "<group>"; };
 		345B1BA51CD9E67F0089FF99 /* ViewController5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController5.h; sourceTree = "<group>"; };
@@ -216,6 +219,8 @@
 				341335AB1CCDDEDB0027DF22 /* ViewController4.m */,
 				345B1BA51CD9E67F0089FF99 /* ViewController5.h */,
 				345B1BA61CD9E67F0089FF99 /* ViewController5.m */,
+				3455D5121D5D9C5500C8BBCE /* UINavigationController+Demo.h */,
+				3455D5131D5D9C5500C8BBCE /* UINavigationController+Demo.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -425,6 +430,7 @@
 			files = (
 				341335AC1CCDDEDB0027DF22 /* ViewController.m in Sources */,
 				3457106B1D35CDC300D45E5C /* TCSettingLikeViewController.m in Sources */,
+				3455D5141D5D9C5500C8BBCE /* UINavigationController+Demo.m in Sources */,
 				345B1BA71CD9E67F0089FF99 /* ViewController5.m in Sources */,
 				34A2DB811D0D6A0B0043CF34 /* TCSettingCellModel.m in Sources */,
 				341335AF1CCDDEDB0027DF22 /* ViewController3.m in Sources */,
