@@ -192,8 +192,7 @@ static const CGFloat kTitleMarginRight2 = 10.0f;
         _detailLabel = [[UILabel alloc] init];
         _detailLabel.textAlignment = NSTextAlignmentRight;
         _detailLabel.numberOfLines = 1;
-        _detailLabel.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle14)];
-        _detailLabel.textColor = [UIColor grayColor];
+        _detailLabel.font = [UIFont systemFontOfSize:FONT_SIZE(TCFontTextStyle15)];
         [self.contentView addSubview:_detailLabel];
     }
     return _detailLabel;
