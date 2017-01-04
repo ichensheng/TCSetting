@@ -104,7 +104,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    TCSettingCellModel *cellModel = [self.settingDatasource[section] lastObject];
+    TCSettingCellModel *cellModel = [self.settingDatasource[section] firstObject];
     NSString *headerText = cellModel.headerText;
     if (headerText) {
         UILabel *headerLabel = [[UILabel alloc] init];
@@ -184,7 +184,7 @@ static const CGFloat kHeaderAndFooterFontSize = 14.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    TCSettingCellModel *cellModel = [self.settingDatasource[section] lastObject];
+    TCSettingCellModel *cellModel = [self.settingDatasource[section] firstObject];
     if (cellModel &&  cellModel.headerText) {
         CGSize constraintSize = CGSizeMake(kScreenWidth - kSectionHeaderAndFooterMarginLeft * 2, CGFLOAT_MAX);
         CGSize size = [self boundingSizeWithFont:[UIFont systemFontOfSize:kHeaderAndFooterFontSize]
