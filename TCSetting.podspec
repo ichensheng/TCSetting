@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "TCSetting"
-  s.version      = "1.0.12"
+  s.version      = "1.2.0"
   s.summary      = "用于App的设置页面，简单、实用、美观"
   s.homepage     = "https://github.com/ichensheng/TCSetting"
   s.license      = "Apache"
